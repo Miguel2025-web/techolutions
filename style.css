@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Usar o box-sizing:border-box para facilitar o manuseio dos elementos com padding e margins*/
+*{ box-sizing: border-box;
+}
+
+body{margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Usar o flex-flow:rou wrap para fazer com que os itens, mesmo que maior que as DIVS, permaneçam dentro das DIVs*/
+/*Usar o Display:Flex para fazer com que os itens fiquem alinhados*/
+.navbar{ display: flex;
+    flex-flow: row wrap;
+    height: 100px; 
+    width: 100%;
+/*Usar o Justify content para manter os elementos no centro*/
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+}
+
+.logo{flex: 20%;
+    text-align: left;
+    margin-left: 10%;
+}
+.logo h1{font-family: "Lobster Two", sans-serif;
+    color: #ff4f5a;
+    font-size: 34px;
+}
+
+ /*Usar o flex para definir a posição do elemento*/
+.menu{flex: 70%; 
+    text-align: right;
+    padding: 20px;
+}
+ /*Usar o padding para preencher os elementos dentro das DIVs*/
+.menu a{color:#ff4f5a;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 16px;
+}
+
+.menu a:hover{color: #ff2978;
+    border-top: 4px solid #180F4A;
+}
+ /*Usar o BorderRadius para definr uma borda redonda*/
+#botaofaleconosco{background: #180F4A;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+    #botaofaleconosco:hover{background: #ff2978;}
+
+.header{ 
+background: white;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+
+ /*Este preenchimento está garantindo que a posição do NAVBAR não tampe uma parte da imagem.*/
+padding-top: 100px;
+}
+
+.headline{ margin-left: 10%;
+    flex: 40%;
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: #180F4A;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    color: grey;
+    text-align: left;
+}
+
+ /*O Display inline-box fará com que a extrutura do texto saia de cima das outras letras, resultante da tag inline(automatica)*/
+.contact-btn{
+    display: inline-block;
+    background-color: #ff4f5a;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.contact-btn:hover{background-color: #180F4A;
+
+}
+
+ /*O flex determina o tamanho*/
+.img-headline{ margin-right: 10%;
+flex: 40%;
+text-align: center;
+}
+
+section{
+    width: 90%;
+    display: inline-block;
+    margin-top: 50px;
+ 
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+
+}
+
+
+ /*A fonte-weight: bold, determina o negrito*/
+
+
+section h2{width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'lobster two', cursive;
+    font-weight: bold;
+    color: #180F4A;
+   
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{ height: 0%;
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #ff4f5a ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/*Determina que o texto original suma e o texto oclto apareça */
+
+.card:hover{background-color: #ff4f5a;
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .texto-oculto{
+    display: block;
+}
+
+
+.texto-oculto{
+    display: none;
+}
+
+footer{margin-top: 100px;
+    
+    height: 400px;
+    background-image: linear-gradient(180deg, #180F4A, #090422, black);
+    text-align: center;
+    border-top: 5px solid #ff4f5a;
+}
+
+.logo-rodape{
+    padding: 100px;
+}
+
+.agencia{font-family: "Lobster Two", sans-serif;
+    color: #ff4f5a;
+    font-size: 34px;
+}
+
+.icone-whatsap{height: 80px; 
+    width: 80px;
+    border-radius: 150px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+
+}
